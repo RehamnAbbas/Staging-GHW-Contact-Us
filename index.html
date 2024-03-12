@@ -116,4 +116,11 @@ Description
 var zf_MandArray = [ "Name_First", "Name_Last", "Email", "Dropdown", "SingleLine2"]; 
 var zf_FieldArray = [ "Name_First", "Name_Last", "SingleLine", "Email", "PhoneNumber_countrycode", "SingleLine1", "Dropdown", "SingleLine2", "MultiLine"]; 
 var isSalesIQIntegrationEnabled = false;
-var salesIQFieldsArray = [];</script></body></html>
+var salesIQFieldsArray = [];</script>
+<script>
+    window.addEventListener('message', function (event) {
+    var email = event.data;
+    document.getElementById('Email').value = email;
+});
+</script>
+</body></html>
